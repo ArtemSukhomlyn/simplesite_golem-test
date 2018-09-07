@@ -13,7 +13,7 @@ def test(data):
     send_keys(Login_page.username_login_field, 'test_user')
     send_keys(Login_page.password_login_field, 'test_password')
     click(Login_page.Login_buttom)
-    wait(3)
+    wait(2)
     verify_exists(Login_page.Login_error_text)
 
 def teardown(data):
